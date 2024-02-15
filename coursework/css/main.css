@@ -1,0 +1,35 @@
+body{
+    background-color:white;
+}
+
+header{
+    background-color: gray; border-top-left-radius: 10px; border-top-right-radius: 10px;   
+}
+
+h1,h2,h3,h4,h5,h6,p{ 
+    font-family: 'Courier New', Courier, monospace; color:black
+}
+
+h1{
+    font-size: 30pt;
+}
+
+h3{
+    font-size: 20pt;
+}
+
+p{
+    font-size: 15pt;
+}
+
+main{
+    background-color: gray; border-radius: 10px;
+}
+
+aside{
+    background-color: gray; border-radius: 10px;
+}
+
+footer{
+    background-color: blueviolet;border-radius: 10px;
+}
