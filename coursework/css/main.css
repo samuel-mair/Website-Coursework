@@ -33,3 +33,19 @@ aside{
 footer{
     background-color: blueviolet;border-radius: 10px;
 }
+
+nav li{
+    border: 2px, solid, black; background-color: blueviolet; list-style-type: none;
+}
+
+nav li a{
+    color:pink; text-align: center; text-decoration: none;
+}
+
+nav li hover{
+    background-color: lightcoral; 
+}
+
+.active{
+    background-color: brown;
+}
