@@ -55,7 +55,7 @@ nav li a{
 
 }
 
-nav li hover{
+nav li:hover{
     background-color: black; 
 
 }
