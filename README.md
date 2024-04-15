@@ -1,2 +1,2 @@
-# SAM SPOTIFY SOCIETY type /coursework on the end of the link if doesnt work
+# SAM SPOTIFY SOCIETY - add /coursework to the end of the link if doesnt work
 
