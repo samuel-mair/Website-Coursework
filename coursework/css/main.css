@@ -95,14 +95,16 @@ table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  font-size: 10pt;
 }
 
 /* style for table headings and cells */
 table th, td {
   border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-  vertical-align: top;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  width: 12.5%;
 }
 
 /* table headings */
@@ -123,7 +125,7 @@ table tr:nth-child(even) {
 
 /* style for hovered row */
 table tr:hover{
-  background-color: #474747
+  background-color: #0080ff
 }
 
 /* style for size of carousel */
@@ -131,6 +133,13 @@ table tr:hover{
   object-fit: cover; 
   height: 750px; 
 }
+
+/* makes the number of slide not visible */
+.carousel-indicators li {
+  text-indent: -999px;
+  list-style-type: none;
+}
+
 
 /* style for gallery image */
 .gallery-img {
@@ -171,7 +180,113 @@ table tr:hover{
   float: left;
 }
 
+/* form */
+form {
+  margin-bottom: 20px;
+}
+
+/* fieldset */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* legend */
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactinputs{
+  border: 1px solid #000000;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* spacing between radio buttons and text */
+input[type="radio"] {
+  margin-right: 10px;
+  margin-left:30px
+}
+
+/* labels for radio */
+label.radio,
+input[type="radio"] {
+  display: inline-block; 
+  margin-bottom: 20px; 
+}
+
+/* creates space between form elements */
+form label, form input {
+  margin-bottom: 20px; 
+}
+
+/* news article border and spacing */
+.news {
+  display: flex;
+  border: 2px solid #000;
+  margin-bottom: 20px; /* Add space between news items */
+}
+
+/* size and spacing of new img */
+.news-image {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+
+/* text will fill container after image */
+.news-content {
+  flex-grow: 1;
+}
+
+/* headline spacing */
+.news-content h3 {
+  margin-top: 10px; 
+}
+
+/* text spacing */ 
+.news-content p {
+  margin-top: 20px;
+}
+
 /* login form */
 #loginForm{
   text-align:right;
+  margin: 0px;
+  padding: 0px;
 }
+
+/* events recommendation form */
+form[name="events"] {
+  border: 1px solid black; 
+  padding: 20px; 
+  margin-top: 20px; 
+}
+
+/* h2 and p */
+h2, p{
+  padding: 10px;
+  margin: 10px;
+}
+
+/* artist info text boxes */
+.song-info, .artist-info {
+  border: 1px solid #000; 
+  padding: 10px;
+  margin-bottom: 20px;
+  height: auto; 
+  box-sizing: border-box;
+  background-color: rgb(175, 175, 175);
+}
+
+

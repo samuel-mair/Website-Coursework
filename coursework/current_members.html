@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+    Threat Source: external
+    Threat Agent: human group
+    Threat Intention: intentional
+    Threat Motivation: deface website, cause embarrassment to the society, tarnish reputation
+    Threat Impact: dmg to reputation of society and members, ruins site
+    Threat Method: impersonating a member to change their image, phishing attacks(hacking people and using their login to change stuff)
+    Threat Mitigation: strong session management, automatic timeouts to kick hackers off, monitor for suspicious activity like multiple img changes in short time
+
+-->
     <head>
         <title>  Sam's Spotify</title>
         <!-- bootsrap css and js -->
@@ -18,47 +29,49 @@
         </header>
     <!-- nav bar-->
     <nav> 
-        <ul> 
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="img_gallery.html">Gallery</a></li>
             <li><a href="current_members.html" class="active">Current Members</a></li>
             <li><a href="event_calender.html">Events</a></li>
             <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="top_artists.html">Top Artists</a></li>
+            <li><a href="top_songs.html">Top Songs</a></li>
         </ul>
     </nav>
         <!-- main info area-->
         <main> 
             <div class="container">
                 <div class="row">
-                    <!-- society members x5-->
+                    <!-- society members and little profile picture icons -->
                     <div class="col-sm">
                        <h5>Captain</h5>
-                       <img src="images/jid.jpeg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
-                       <h5>Sam</h5>
+                       <img src="images/ME.png" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
+                       <h5>Me 3/4 Years ago when the Google Car went past</h5>
                     </div>
 
                     <div class="col-sm">
                         <h5>Member</h5>
-                        <img src="images/jid.jpeg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
-                        <h5>Jid</h5>
+                        <img src="images/JID_spotify.jpg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
+                        <h5>JID</h5>
                      </div>
 
                      <div class="col-sm">
                         <h5>Member</h5>
-                        <img src="images/jid.jpeg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
-                        <h5>Jid</h5>
+                        <img src="images/travis_spotify.jpg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
+                        <h5>Travis Scott</h5>
                      </div>
 
                      <div class="col-sm">
                         <h5>Member</h5>
-                        <img src="images/jid.jpeg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
-                        <h5>Jid</h5>
+                        <img src="images/kendrick_spotify.jpg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
+                        <h5>Kendrick Lamar</h5>
                      </div>
 
                      <div class="col-sm">
-                        <h5>Member</h5>
-                        <img src="images/jid.jpeg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
-                        <h5>Jid</h5>
+                        <h5>Businessman</h5>
+                        <img src="images/franklin_saint.jpg" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden" alt="jid">
+                        <h5>Franklin Saint</h5>
                      </div>
                 </div>
             </div>
@@ -68,7 +81,21 @@
         <aside> </aside>
 
 
-        <!-- footer -->
-        <footer> <div> <p> Copyright Sam Mair </p></div> </footer>
+        <!-- footer copyright thing-->
+        <footer> 
+            <div> 
+                <p> 
+                    Disclaimer - I do not own any of the music or images displayed. Sam Mair 2024
+                </p>
+            </div> 
+        </footer>
+
+            <!-- link to javascript file-->
+    <script src="js/scripts.js"></script>
+
     </body>
+
+
+
+    
 </html>

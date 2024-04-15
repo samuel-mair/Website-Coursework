@@ -18,19 +18,25 @@
         </header>
     <!-- nav bar-->
     <nav> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="img_gallery.html">Gallery</a></li>
-            <li><a href="current_members.html">Current Members</a></li>
-            <li><a href="event_calender.html" class="active">Events</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-    </nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="img_gallery.html">Gallery</a></li>
+          <li><a href="current_members.html">Current Members</a></li>
+          <li><a href="event_calender.html" class="active">Events</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="top_artists.html">Top Artists</a></li>
+          <li><a href="top_songs.html">Top Songs</a></li>
+      </ul>
+  </nav>
     <!-- main info area-->
     <main>
+
         <div>
-            <!-- table for events (still need to put events in) -->
+
+            <!-- table for events -->
             <table>
+
+              <!-- top row / column names -->
                 <tr>
                   <th>Week</th>
                   <th>Monday</th>
@@ -41,115 +47,165 @@
                   <th>Saturday</th>
                   <th>Sunday</th>
                 </tr>
+
+                <!-- week one-->
                 <tr>
                   <td>1</td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td>Welcome to the Society! <br> @Room N312</td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review <br> @Room N516</td>
                 </tr>
+
+                <!-- week two-->
                 <tr>
                   <td>2</td>
                   <td></td>
+                  <td>Get To Know Eachother! <br> @Local Bar </td>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review<br> @Room N516</td>
                 </tr>
+
+                <!-- week three-->
                 <tr>
                   <td>3</td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td>Create Your Own Song! <br> @Rm15</td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review<br> @Room N516</td>
                 </tr>
+
+                <!-- week four-->
                 <tr>
                   <td>4</td>
                   <td></td>
+                  <td>Create Your Own Song! <br> @Rm15</td>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review<br> @Room N516</td>
                 </tr>
+
+                <!-- week five -->
                 <tr>
                   <td>5</td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td>Song Presentations <br> @Rm15 </td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review<br> @Room N516</td>
                 </tr>
+
+                <!-- week six-->
                 <tr>
                   <td>6</td>
                   <td></td>
+                  <td>Everyone Listens To JID<br> @Wherever You Want Just LISTEN</td>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review<br> @Room N516</td>
                 </tr>
+
+                <!-- week seven-->
                 <tr>
                   <td>7</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>On Break, No Society this Week</td>
+                  <td>On Break, No Society this Week</td>
+                  <td>On Break, No Society this Week</td>
+                  <td>On Break, No Society this Week</td>
+                  <td>On Break, No Society this Week</td>
+                  <td>On Break, No Society this Week</td>
+                  <td>On Break, No Society this Week</td>
                 </tr>
+
+                <!-- week eight-->
                 <tr>
                   <td>8</td>
                   <td></td>
+                  <td>Favourite Song and Why <br> @N412</td>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review<br> @N516</td>
                 </tr>
+
+                <!-- week nine-->
                 <tr>
                   <td>9</td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td>Favourite Album and Why<br> @N516</td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>Weekly Album Review<br> @Room N516</td>
                 </tr>
+
+                <!-- week ten FINAL WEEK!!-->
                 <tr>
                   <td>10</td>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td>FAREWELL DRINKS @BAR</td>
                   <td></td>
                   <td></td>
                 </tr>
               </table>
-              
-        </div>
-      </main>
+             </div>
 
+              <!-- form event recommendation -->
+
+              <p>Want to recommend an event? Tell us below!</p>
+
+              <form name="events">
+               
+                <label for="event_title">Event Title:</label>
+                <input type="text" name="event_title" id="event_title" placeholder="Enter the title of the event">
+            
+               
+                <label for="event_date">Event Date:</label>
+                <input type="date" name="event_date" id="event_date">
+
+                <button type="button" onclick="return submit_event()">Submit Event</button>
+              </form>
+            </main>
+
+        
+        <!-- aside -->
         <aside> </aside>
 
 
-        <!-- footer -->
-        <footer> <div> <p> Copyright Sam Mair </p></div> </footer>
+        <!-- footer copyright -->
+        <footer> 
+          <div> 
+            <p> 
+              Disclaimer - I do not own any of the music or images displayed. Sam Mair 2024
+            </p>
+        </div> 
+      </footer>
+
+          <!-- link to javascript file-->
+    <script src="js/scripts.js"></script>
+
     </body>
+
+
+
 </html>

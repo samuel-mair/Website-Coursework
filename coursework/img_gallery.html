@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Threat Model
+  Threat Source: external
+  Threat Agent: human group
+  Threat Intention: intentional
+  Threat Impact: defacing of our website by altering or deleting imgs, could replace them with inappropriate images
+  Threat Method: accessign restriced img by manipulatign urls that reference files in the gallery, uploading malware disguised as images.
+  Thread Mitigation: ensure proper validation of file uploads, access controls to prevents file uploads by restricted users, regularly update the software to lessen security issues
+ 
+-->
     <head>
         <title> Sam's Spotify</title>
         <!-- bootstrap css and js-->
@@ -17,14 +27,16 @@
         </header>
     <!-- nav bar -->
     <nav> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="img_gallery.html" class="active">Gallery</a></li>
-            <li><a href="current_members.html">Current Members</a></li>
-            <li><a href="event_calender.html">Events</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-     </nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="img_gallery.html" class="active">Gallery</a></li>
+          <li><a href="current_members.html">Current Members</a></li>
+          <li><a href="event_calender.html">Events</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="top_artists.html">Top Artists</a></li>
+          <li><a href="top_songs.html">Top Songs</a></li>
+      </ul>
+  </nav>
     <!-- main info area -->
      <main>
         <!-- images set out in a 3x3 grid -->
@@ -69,27 +81,20 @@
         <aside> </aside>
 
 
-        <!-- footer -->
-        <footer> <div> <p> Copyright Sam Mair </p></div> </footer>
-        <!-- script for user image interactivity-->
-        <script>
-            var images = document.querySelectorAll(".gallery-img");
-        
-            images.forEach(function(img) {
-                img.addEventListener("mouseover", function() {
-                    //permanently removes blurred after one hover
-                    this.classList.remove("blurred");
-                    //adds 'focused' when hovering which in turn adds border
-                    this.classList.add("focused");
-                });
-                img.addEventListener("mouseout", function() {
-                    // removes focused/border when mouse off 
-                    this.classList.remove("focused");
-                });
-            //adds initial blur
-            img.classList.add("blurred");
-            });
-        </script>
+        <!-- footer copyright-->
+        <footer> 
+          <div> 
+            <p> 
+              Disclaimer - I do not own any of the music or images displayed. Sam Mair 2024 
+            </p>
+          </div> 
+        </footer>
             
+            <!-- link to javascript file-->
+    <script src="js/scripts.js"></script>
+  
   </body>
+
+
+
 </html>
