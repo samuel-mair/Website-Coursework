@@ -1,64 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title> RGU Football</title>
+        <title> Sam's Spotify</title>
+        <!-- bootstrap css and js-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- my ccs style sheet-->
         <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
-        <header> <h1> Football Society</h1></header>
-
+        <!-- header -->
+        <header> 
+            <img id="logo" src="images/logo.png" alt="Society Logo"> 
+            <h1> Sam Mair's Personal Spotify Society</h1>
+        </header>
+    <!-- nav bar -->
     <nav> 
         <ul>
-            <li class = "active"><a href="index.html">Home</a></li>
-            <li class = "active"><a href="img_gallery.html">Gallery</a></li>
-            <li class = "active"><a href="current_members.html">Current Members</a></li>
-            <li class = "active"><a href="event_calender.html">Events</a></li>
-            <li class = "active"><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html" class="active">Gallery</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calender.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
      </nav>
-
-        <main> 
-            <div>
-                <img src="images/aberdeen.jpg" alt= "aberdeen"/>
+    <!-- main info area -->
+     <main>
+        <!-- images set out in a 3x3 grid -->
+        <div id="img-gallery" class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="images/future.jpg" class="gallery-img" alt="future">
             </div>
-
-            <div>
-                <img src="images/cat.jfif" alt="cat"/>
+            <div class="col-sm-4">
+              <img src="images/jid.jpeg" class="gallery-img" alt="jid">
             </div>
-
-            <div>
-                <img src="images/dog.jpg" alt="dog"/>
+            <div class="col-sm-4">
+              <img src="images/kendrick.jpg" class="gallery-img" alt="kendrick">
             </div>
-
-            <div>
-                <img src="images/runningman.png" alt="running man emoji"/>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="images/musicnotes.jpg" class="gallery-img" alt="music-notes">
             </div>
-
-            <div>
-                <img src="images/eagle.jfif" alt="eagle"/>
+            <div class="col-sm-4">
+              <img src="images/musicstudio.jpeg" class="gallery-img" alt="music-studio">
             </div>
-
-            <div>
-                <img src="images/football.jfif" alt="football"/>
+            <div class="col-sm-4">
+              <img src="images/spotifylogo.jpg" class="gallery-img" alt="spotify-logo">
             </div>
-
-            <div>
-                <img src="images/landscape.jfif" alt="random landscape"/>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="images/travisconcert.jpg" class="gallery-img" alt="travis-concert">
             </div>
-
-            <div>
-                <img src="images/rgu.jpg" alt="rgu"/>
+            <div class="col-sm-4">
+              <img src="images/rollingloud.png" class="gallery-img" alt="rolling-loud">
             </div>
-
-            <div>
-                <img src="images/scotlandflag.jfif" alt="scotland flag"/>
+            <div class="col-sm-4">
+              <img src="images/listening.jpeg" class="gallery-img" alt="listening">
             </div>
-        </main>
+          </div>
+        </div>
+      </main>
+    
 
         <aside> </aside>
 
 
-
+        <!-- footer -->
         <footer> <div> <p> Copyright Sam Mair </p></div> </footer>
-    </body>
+        <!-- script for user image interactivity-->
+        <script>
+            var images = document.querySelectorAll(".gallery-img");
+        
+            images.forEach(function(img) {
+                img.addEventListener("mouseover", function() {
+                    //permanently removes blurred after one hover
+                    this.classList.remove("blurred");
+                    //adds 'focused' when hovering which in turn adds border
+                    this.classList.add("focused");
+                });
+                img.addEventListener("mouseout", function() {
+                    // removes focused/border when mouse off 
+                    this.classList.remove("focused");
+                });
+            //adds initial blur
+            img.classList.add("blurred");
+            });
+        </script>
+            
+  </body>
 </html>

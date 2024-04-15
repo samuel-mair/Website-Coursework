@@ -1,92 +1,177 @@
-body{
-    background-color:white;
+/* style for main body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-header{
-    background-color: gray; border-top-left-radius: 10px; border-top-right-radius: 10px;  
-    padding: 10px; 
+/* style for header */
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 20px;
+  margin: 10px, background-color; 
 }
 
-h1,h2,h3,h4,h5,h6,p{ 
-    font-family: 'Courier New', Courier, monospace; color:black
+/* style for logo */
+#logo {
+  height: 70px;
+  width: 70px;
+  float: left;
+  margin-right: 20px
 }
 
-h1{
-    font-size: 30pt;
-    display: inline;
+/* nav menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #003366;
+  overflow: hidden;
 }
 
-h3{
-    font-size: 20pt;
+/* nav menu things */
+nav ul li {
+  float: left;
+  margin: 5px;
+  width: auto;
+  border-radius: 5px;
 }
 
-p{
-    font-size: 15pt;
+/* nav links */
+nav li a {
+  display: block;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  background-color: #004d99;
 }
 
-main{
-    background-color: gray; border-radius: 10px;
+/* style for nav menu hover */
+nav li a:hover {
+  background-color: #002142;
 }
 
-aside{
-    background-color: gray; border-radius: 10px;
-}
-
-footer{
-    background-color: blueviolet;border-radius: 10px;
-}
-
-nav ul{margin: 0;
-    padding: 0;
-    overflow: hidden; 
-}
-
-nav li{
-    border: 2px, solid, black; 
-    background-color: blue; 
-    list-style-type: none;
-    float: left;
-    width: 15%;
-    padding: 16px;
-}
-
-nav li a{
-    color:pink; text-align: center; text-decoration: none;
-
-}
-
-nav li:hover{
-    background-color: black; 
-
-}
-
+/* style for nav menu active site */
 .active{
-    background-color: brown;
+  background-color: #6a018a;
 }
 
-table{
-    font-family: 'Courier New', Courier, monospace; border-collapse: collapse;
+/* style for main */
+main {
+  padding: 15px;
+  background-color: #f5f5f5;
+  margin: 20px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0000001a;
 }
 
-table td, table th{
-    border:2px, solid, #f0f0f0
+/* style for aside */
+aside {
+  background-color: #e6e6e6;
+  padding: 15px;
+  margin: 20px 15px;
+  border-radius: 5px;
 }
 
-table tr:nth-child(even){
-    background-color: #f2f2f2;
+/* style for footer */
+footer {
+  background-color: #004d99;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
+/* table style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* style for table headings and cells */
+table th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* table headings */
+table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* style for odd rows */
+table tr:nth-child(odd) {
+  background-color: #fff; 
+}
+
+/* style for even rows */
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* style for hovered row */
 table tr:hover{
-    background-color: white;
+  background-color: #474747
 }
 
-table th{
-    background-color: blueviolet; color: white;
+/* style for size of carousel */
+.carousel-item img {
+  object-fit: cover; 
+  height: 750px; 
 }
 
-#logo{ 
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin-right: 10px;
+/* style for gallery image */
+.gallery-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+/* img gallery container */
+#img-gallery {
+  padding: 10px;
+}
+
+/* img gallery row */
+#img-gallery .row {
+  margin-bottom: 10px;
+}
+
+/* keeps it smooth */
+.gallery-img{
+  transition:filter 0.3s ease;
+}
+
+/* style for blur effect on imgs in gallery */
+.blurred{
+  filter:blur(4px) grayscale(50%);
+}
+
+/* style for removing blur and adding border on focused imgs */
+.gallery-img.focused{
+  filter:none;
+  border:solid black 4px;
+}
+
+/* style for left column */
+#left-column{
+  border: 1px solid #000; 
+  float: left;
+}
+
+/* login form */
+#loginForm{
+  text-align:right;
 }
